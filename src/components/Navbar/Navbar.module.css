@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+  height: 20vh;
+  background-color: #ffffff;
+}
+
+.navbar__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  width: 15%;
+}
+.navbar__logo img {
+  width: 70%;
+  cursor: pointer;
+}
+
+.navbar__menu {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*.navbar__item {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+}*/
+
+.navbar__item > .dropdown__menu {
+  color: #274c5b;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar__item > .dropdown__menu::after {
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #274c5b;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar__item > .dropdown__menu:hover::after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.navbar__item > a {
+  color: #274c5b;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+}
+.navbar__item {
+  color: #274c5b;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+}
+.navbar__item > a::after {
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #274c5b;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar__item > a:hover::after { 
+  width: 100%; 
+  left: 0; 
+}
+
+#nav-dropdown {
+  background-color: #fff !important;
+}
+.profile__logo {
+  width: 9%;
+  margin-right: 25px;
+}
+.login__logo {
+  position: relative;
+  left: 1px;
+  width: 9%;
+  margin-right: 25px;
+}
+.cart__logo {
+  position: relative;
+  left: -2px;
+  width: 10%;
+  margin-right: 20px;
+}
+.register__logo {
+  position: relative;
+  left: -2px;
+  width: 10%;
+  margin-right: 20px;
+}
+
+
+.navbar__info {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
